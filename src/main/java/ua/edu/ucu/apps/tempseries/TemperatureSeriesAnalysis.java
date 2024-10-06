@@ -77,11 +77,11 @@ public class TemperatureSeriesAnalysis {
         checkIfEmpty();
         double closestTemp = temperatures[0];
         for (double temp : temperatures) {
-            if (Math.abs(temp - tempValue) < 
-            Math.abs(closestTemp - tempValue)) {
+            if (Math.abs(temp - tempValue) 
+            < Math.abs(closestTemp - tempValue)) {
                 closestTemp = temp;
-            } else if (Math.abs(temp - tempValue) == 
-            Math.abs(closestTemp - tempValue) && temp > closestTemp) {
+            } else if (Math.abs(temp - tempValue) 
+            == Math.abs(closestTemp - tempValue) && temp > closestTemp) {
                 closestTemp = temp;
             }
         }
