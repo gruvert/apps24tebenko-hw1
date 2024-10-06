@@ -13,11 +13,6 @@ public class TemperatureSeriesAnalysis {
     }
 
     public TemperatureSeriesAnalysis(double[] temperatures) {
-        for (double temp : temperatures) {
-            if (temp < ABSOLUTE_ZERO) {
-                throw new InputMismatchException("Temperature below -273");
-            }
-        }
         this.temperatures = temperatures.clone();
         this.size = temperatures.length;
     }
